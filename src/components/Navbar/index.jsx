@@ -10,7 +10,7 @@ const Navbar = () => {
    
     <div>
     <Link to="/home">
-    <button className='mx-7'><BsList /></button>
+    <button className={'mx-7'+ styles.icon} ><BsList /></button>
     </Link>
     </div>
 
