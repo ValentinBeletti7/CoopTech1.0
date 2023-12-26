@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
 import Servicios from './Views/Servicios';
 import Adncooptech from './Views/Adncooptech';
+import CasosExito from './Views/CasosExito';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="" element={<Home/>} />
       <Route path="/Servicios" element={<Servicios/>} />
       <Route path="/Adncooptech" element={<Adncooptech/>} />
+      <Route path="/CasosExito" element={<CasosExito/>} />
 
       </Routes>
       <Footer />

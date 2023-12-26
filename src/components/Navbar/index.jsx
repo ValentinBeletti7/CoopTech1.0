@@ -92,7 +92,9 @@ const Contenido = () => {
     </ul>
 
     <ul class={"list-inside " +styles.nav}>
-      <h2>CASOS DE EXITO </h2> 
+    <Link to="/CasosExito">
+    <a> <h2>CASOS DE EXITO </h2> </a>
+    </Link>
     </ul>
 
 <ul class={"list-inside " +styles.nav}>
