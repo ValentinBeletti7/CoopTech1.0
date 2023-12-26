@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
   return (
-    <div ref={navbarRef} className={"fixed w-full bg-neutral-900 transition-all  duration-1000 ease-in-out h-20 overflow-hidden	shadow-md "  }>
+    <div ref={navbarRef} className={" absolute top-0	 w-full bg-neutral-900 transition-all  duration-1000 ease-in-out h-20 overflow-hidden	shadow-md z-50 "  }>
      <div  className={'w-screen flex flex-row bg-neutral-900	w-full h-[10vh]  	'+ styles.navbar} > 
    
    <div>
@@ -34,8 +34,9 @@ const Navbar = () => {
           )}
 
    </div>
-
+   <Link to="/">
    <img className={styles.img}   src='src/assets/Coop_Tech_inicial_page-0001-removebg-preview.png'></img>
+   </Link>
    <div>
    <Link  to="/home">
    <button className={'mx-7 '+ styles.nav}>Intranet</button>
@@ -56,33 +57,37 @@ const Contenido = () => {
     <>
 
 
-<div className="grid grid-cols-4 gap-4 text-center mb-12 mx-12 ">
+<div className="grid grid-cols-4 gap-4 text-center m-12	">
     <ul class={"list-inside " +styles.nav}>
-     <h2>SERVICIOS</h2> 
-          <li>Oficina Virutal</li>
-          <li>Reconecta </li>
-          <li>+Agua </li>
-          <li>Cloud services </li>
-          <li>Provision </li>
-          <li>Desarollos especiales </li>
+    <Link to="/Servicios">
+         <a><h2>SERVICIOS</h2> </a>
+    </Link>
+            <li>Oficina Virutal</li>
+            <li>Reconecta </li>
+            <li>+Agua </li>
+            <li>Cloud services </li>
+            <li>Provision </li>
+            <li>Desarollos especiales </li>
     </ul>
 
     <ul class={"list-inside " +styles.nav}>
-      <h2>ADN COOPTECH</h2>
+    <Link to="/ADNCOOPTECH">
+    <a> <h2>ADN COOPTECH</h2></a> 
+    </Link>
         <ul class={"list-inside " +styles.nav}>
         <h3>Como somos</h3>
-            <li>Mision</li>
-            <li>Valores </li>
-            <li>Cultura </li>
+        <li>Mision</li>
+        <li>Valores </li>
+        <li>Cultura </li>
         </ul>
         <ul class={"list-inside " +styles.nav}>
         <h3>Quienes somos</h3>
-            <li>MOdelo de Negocios</li>
-            <li>Detalle del equipo </li>
-            <li>Certificaciones y premios </li>
+         <li>Modelo de Negocios</li>
+         <li>Detalle del equipo </li>
+         <li>Certificaciones y premios </li>
         </ul>
         <ul class={"list-inside " +styles.nav}>
-        <h3>Sostenibilidad</h3>
+         <h3>Sostenibilidad</h3>
         </ul>
     </ul>
 
@@ -91,14 +96,14 @@ const Contenido = () => {
     </ul>
 
 <ul class={"list-inside " +styles.nav}>
-  <h2>CARRERA </h2> 
-  <ul class={"list-inside " +styles.nav}>
-        <h3>kind Job</h3>
-            <li>Oficina Virutal</li>
-        </ul>
+    <h2>CARRERA </h2> 
+      <ul class={"list-inside " +styles.nav}>
+      <h3>kind Job</h3> 
+        <a><li>Oficina Virutal</li></a>
+      </ul>
         <ul class={"list-inside " +styles.nav}>
         <h3>Ofertas de empleo</h3>
-            <li>Oficina Virutal</li>
+        <a><li>Oficina Virutal</li></a>
 
         </ul>
   </ul>

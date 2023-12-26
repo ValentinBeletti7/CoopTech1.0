@@ -1,7 +1,7 @@
 .img{
 
-    width: 15vw;
-    height: 15vh !important;
+    width: 10vw;
+    height: 5vh !important;
     display: flex !important;
 
     
@@ -44,3 +44,7 @@ li{
     font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 15px !important;
 }
+a{
+    cursor: pointer;
+}
+
