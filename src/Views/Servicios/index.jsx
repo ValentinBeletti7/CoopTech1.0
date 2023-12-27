@@ -8,12 +8,12 @@ const Servicios = () => {
     <>
       <Panel imagen="src/assets/fondoServicios.jpg"  seccion="Servicios"/>
       <div className={`${styles.contenido} grid grid-cols-3 gap-3 text-center mx-12 mb-12`}>
-        <Tarjeta nombre="Oficina Virtual" descripcion="Breve descripción del producto" logo=" src/assets/oficinavirtual.png" />
-        <Tarjeta nombre="Reconecta" descripcion="Breve descripción del producto" />
-        <Tarjeta nombre="+Agua" descripcion="Breve descripción del producto" />
-        <Tarjeta nombre="Cloud services" descripcion="Breve descripción del producto" />
-        <Tarjeta nombre="Provisión" descripcion="Breve descripción del producto" />
-        <Tarjeta nombre="Desarrollos especiales" descripcion="Breve descripción del producto" />
+      <Tarjeta img="src/assets/oficinavirtual.png" nombre="Oficina Virtual"/>
+      <Tarjeta nombre="Reconecta "/>
+      <Tarjeta nombre="+Agua "/>
+      <Tarjeta nombre="Cloud services"/>
+      <Tarjeta nombre="Provision "/>
+      <Tarjeta nombre="Desarollos especiales "/>
       </div>
     </>
   );

@@ -12,3 +12,8 @@ position: relative;
       color: white;
       font-weight: bold !important;
     }
+
+.swadow{
+  --tw-drop-shadow: drop-shadow(2px 2px 2px #000) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+  }
