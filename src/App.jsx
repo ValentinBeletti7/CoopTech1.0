@@ -7,8 +7,10 @@ import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Footer from './components/Footer';
 import Servicios from './Views/Servicios';
-import Adncooptech from './Views/Adncooptech';
 import CasosExito from './Views/CasosExito';
+import ComoSomos from './Views/Adncooptech/ComoSomos';
+import Quienesomos from './Views/Adncooptech/QuienesSomos';
+import Sostenibilidad from './Views/Adncooptech/Sostenibilidad';
 
 
 function App() {
@@ -18,9 +20,12 @@ function App() {
       <Routes>
       <Route path="" element={<Home/>} />
       <Route path="/Servicios" element={<Servicios/>} />
-      <Route path="/Adncooptech" element={<Adncooptech/>} />
-      <Route path="/CasosExito" element={<CasosExito/>} />
+      <Route path="/ComoSomos" element={<ComoSomos/>} />
+      <Route path="/Quienesomos" element={<Quienesomos/>} />
+      <Route path="/Sostenibilidad" element={<Sostenibilidad/>} />
 
+      <Route path="/CasosExito" element={<CasosExito/>} />
+      
       </Routes>
       <Footer />
     </div>

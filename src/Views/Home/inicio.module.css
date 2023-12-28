@@ -11,9 +11,21 @@ position: relative;
       line-height: 65px;
       color: white;
       font-weight: bold !important;
+      width: 44vw;
+      font-size:40px ;
+      transition: opacity 0.5s ease-in-out; 
     }
 
 .swadow{
   --tw-drop-shadow: drop-shadow(2px 2px 2px #000) !important;
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+  }
+  .fadeIn {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  .fadeOut {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
   }

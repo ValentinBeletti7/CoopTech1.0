@@ -1,15 +1,4 @@
-
-
-h1{
-    color: black; 
-    font-family: 'Open-Sans', sans-serif;
-    font-size: 32px !important;
-    font-weight: bold !important;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    position: relative;
-}
- h1::after {
+h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -18,4 +7,18 @@ h1{
     background: linear-gradient(90deg, rgba(90,188,170,1) 0%, rgba(31,118,186,1) 100%);
     bottom: 0;
     left: calc(50% - 50px);
+}
+
+.img{
+    width: 30vw;
+    height: 30vh;
+    border-radius: 10px;
+}
+.texto{
+    font-family: 'Open Sans', sans-serif;
+    width: 30vw;
+
+}
+.textli{
+    font-size: 20px !important;
 }

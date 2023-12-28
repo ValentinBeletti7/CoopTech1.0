@@ -8,6 +8,7 @@
     transition: transform 200ms ease;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    top: -155px;
   }
   
   .cardmenu {
@@ -73,7 +74,7 @@
   }
   
   .cardafter {
-    transform: translateX(-100px);
+    transform: translateX(-180px);
   }
   
   .cardafter > span,
@@ -249,3 +250,23 @@
 }
 .swadow:hover{
     transform: translateY(-0.5rem) scale(1.0425);}
+
+.descripcion{
+  position: relative;
+  top: 5vh;
+  left: 6vw;
+  width: 10vw;
+  font-size: 14px;
+}
+.divCard{
+    width: 16vw;
+    margin-left: 9rem;
+    height: 52vh;
+  }
+
+@media (max-width: 1340px) {
+  .card{
+      margin-left: 0rem !important;
+  
+  }
+  }

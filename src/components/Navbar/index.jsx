@@ -12,10 +12,14 @@ const Navbar = () => {
 
   const expandir = () => {
     setExpand(!expand);
-    const height = expand ? "5rem":"50vh"  ;
-    navbarRef.current.style.height = height;
+    const height = expand ? "5rem" : "50vh";
+    
+    if (expand) {
+      navbarRef.current.style.height = height;
+    } else {
+      navbarRef.current.style.height = height;
+    }
   };
-
 
 
   return (
@@ -47,7 +51,7 @@ const Navbar = () => {
    
     </div>
       
-    {expand && <Contenido />}
+    {<Contenido />}
     </div>
   );
 };
@@ -71,33 +75,42 @@ const Contenido = () => {
     </ul>
 
     <ul class={"list-inside " +styles.nav}>
-    <Link to="/ADNCOOPTECH">
-    <a> <h2>ADN COOPTECH</h2></a> 
-    </Link>
+    <h2>ADN COOPTECH</h2>
         <ul class={"list-inside " +styles.nav}>
-        <h3>Como somos</h3>
+        <Link to="/ComoSomos">
+        <a> <h3>Como somos</h3></a> 
+        </Link>
         <li>Mision</li>
         <li>Valores </li>
         <li>Cultura </li>
         </ul>
         <ul class={"list-inside " +styles.nav}>
-        <h3>Quienes somos</h3>
+        <Link to="/Quienesomos">
+        <a> <h3>Quienes somos</h3></a> 
+        </Link>
          <li>Modelo de Negocios</li>
          <li>Detalle del equipo </li>
          <li>Certificaciones y premios </li>
         </ul>
         <ul class={"list-inside " +styles.nav}>
-         <h3>Sostenibilidad</h3>
+        <Link to="/Sostenibilidad">
+        <a> <h3>Sostenibilidad </h3></a> 
+        </Link>
         </ul>
     </ul>
 
     <ul class={"list-inside " +styles.nav}>
     <Link to="/CasosExito">
-    <a> <h2>CASOS DE EXITO </h2> </a>
+    <a> <h2 className="mb-24">CASOS DE EXITO </h2> </a>
     </Link>
+    <Link to="/CasosExito">
+    <a> <h2 >CERTIFICACIONES Y PREMIOS </h2> </a>
+    </Link>
+   
     </ul>
 
 <ul class={"list-inside " +styles.nav}>
+
     <h2>CARRERA </h2> 
       <ul class={"list-inside " +styles.nav}>
       <h3>kind Job</h3> 
@@ -105,9 +118,11 @@ const Contenido = () => {
       </ul>
         <ul class={"list-inside " +styles.nav}>
         <h3>Ofertas de empleo</h3>
-        <a><li>Oficina Virutal</li></a>
-
+        <a ><li>Oficina Virutal</li></a>  
         </ul>
+    <Link to="/CasosExito">
+    <a> <h2 >COMUNIDAD / NOTICIAS </h2> </a>
+    </Link>
   </ul>
 </div>
 

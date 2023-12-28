@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Tarjeta.module.css'; 
+import styles from './tarjeta.module.css'; 
 
 const Tarjeta = ({ nombre,img }) => {
   const [after, setAfter] = useState(true);
@@ -12,8 +12,11 @@ const Tarjeta = ({ nombre,img }) => {
 
   return (
     <>
-      <div className={`${className} ml-36`}>
+    <div className={styles.divCard}>
+    <p className={styles.descripcion}> Descripcion del Producto Descripcion del Producto  Descripcion del Producto  Descripcion del Producto Descripcion del Producto Descripcion del Producto  Descripcion del Producto  Descripcion del Producto</p>
+      <div className={`${className} `}>
         <div className={styles.cardmenu}>
+      
          <img src={img} className={styles.swadow } onClick={handleClick} />
         </div>
         <span>{nombre}</span>
@@ -22,6 +25,8 @@ const Tarjeta = ({ nombre,img }) => {
             ¡HAGA CLIC EN MÍ!<span>¡HAGA CLIC EN MÍ!</span>
           </div>
         </div>
+      </div>
+     
       </div>
     </>
   );

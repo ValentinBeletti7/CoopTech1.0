@@ -6,15 +6,27 @@
 }
 .texto{ 
     position: absolute;
-    top: 33vh;
+    top: 20vh;
      font-family: 'Open Sans', sans-serif;
      font-size: 65px;
      line-height: 75px;
      color: white;
      font-weight: bold !important;
 }
+.textosub{ 
+  position: absolute;
+  width: 75vw;
+  top: 30vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  line-height: 50px;
+  color: white;
 
+}
 
+.textli{
+  font-size: 18px !important;
+}
 
 .waves {
     display: block;
