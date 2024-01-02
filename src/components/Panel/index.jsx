@@ -11,9 +11,9 @@ const Panel = ({imagen,seccion,subSeccion}) => {
   return (
     <>
       <div className={' '+ styles.hero}>
-        <img className={styles.imagenpanel} src={imagen} alt="Servicios" />
-        <p className={styles.texto} >{seccion}</p>
-        <ul className={styles.textosub}>{listaDeTexto}</ul>
+        <img className={styles.imagenpanel } src={imagen} alt="Servicios" />
+        <p className={styles.texto } >{seccion}</p>
+        <ul className={styles.textosub }>{listaDeTexto}</ul>
         <svg className={styles.waves} xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
           <defs>
             <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />

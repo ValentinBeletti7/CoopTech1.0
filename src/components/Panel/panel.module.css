@@ -12,20 +12,28 @@
      line-height: 75px;
      color: white;
      font-weight: bold !important;
+     --tw-drop-shadow: drop-shadow(2px 2px 2px #000) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 .textosub{ 
   position: absolute;
   width: 75vw;
   top: 30vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 27px;
   line-height: 50px;
   color: white;
-
+  --tw-drop-shadow: drop-shadow(2px 2px 2px #000) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 .textli{
-  font-size: 18px !important;
+  font-size: 24px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  line-height: 50px;
 }
 
 .waves {

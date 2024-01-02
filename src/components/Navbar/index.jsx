@@ -85,12 +85,11 @@ const Contenido = () => {
         <li>Cultura </li>
         </ul>
         <ul class={"list-inside " +styles.nav}>
-        <Link to="/Quienesomos">
+        <Link to="/QuienesSomos">
         <a> <h3>Quienes somos</h3></a> 
         </Link>
          <li>Modelo de Negocios</li>
          <li>Detalle del equipo </li>
-         <li>Certificaciones y premios </li>
         </ul>
         <ul class={"list-inside " +styles.nav}>
         <Link to="/Sostenibilidad">
@@ -101,7 +100,7 @@ const Contenido = () => {
 
     <ul class={"list-inside " +styles.nav}>
     <Link to="/CasosExito">
-    <a> <h2 className="mb-24">CASOS DE EXITO </h2> </a>
+    <a> <h2 className="mb-28">CASOS DE EXITO</h2></a>
     </Link>
     <Link to="/CasosExito">
     <a> <h2 >CERTIFICACIONES Y PREMIOS </h2> </a>
@@ -118,9 +117,9 @@ const Contenido = () => {
       </ul>
         <ul class={"list-inside " +styles.nav}>
         <h3>Ofertas de empleo</h3>
-        <a ><li>Oficina Virutal</li></a>  
+        <a ><li className="mb-1.5	">Oficina Virutal</li></a>  
         </ul>
-    <Link to="/CasosExito">
+    <Link to="/Noticias">
     <a> <h2 >COMUNIDAD / NOTICIAS </h2> </a>
     </Link>
   </ul>

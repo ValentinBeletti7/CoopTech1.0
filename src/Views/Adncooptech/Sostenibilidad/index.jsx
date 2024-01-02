@@ -8,7 +8,7 @@ import Olas from '../../../components/Olas';
 const Sostenibilidad = () => {
   return (
     <>
-      <Panel imagen="src/assets/adn.jpeg"  seccion="ADN COOPTECH" subSeccion="Sostenibilidad"/>
+      <Panel imagen="src/assets/sea-164989_1280.jpg"   seccion="ADN COOPTECH" subSeccion="Sostenibilidad"/>
      <div className={styles.contenido}>
       <Olas titulo='Sostenibilidad  ' imagen="src/assets/furniture-1840463_1280.jpg" />
 

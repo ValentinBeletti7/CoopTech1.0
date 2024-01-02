@@ -9,8 +9,10 @@ import Footer from './components/Footer';
 import Servicios from './Views/Servicios';
 import CasosExito from './Views/CasosExito';
 import ComoSomos from './Views/Adncooptech/ComoSomos';
-import Quienesomos from './Views/Adncooptech/QuienesSomos';
 import Sostenibilidad from './Views/Adncooptech/Sostenibilidad';
+import ServiciosDescripcion from './Views/Servicios/vistaDescripcion';
+import QuienesSomos from './Views/Adncooptech/QuienesSomos';
+import Noticias from './Views/Noticias';
 
 
 function App() {
@@ -21,11 +23,13 @@ function App() {
       <Route path="" element={<Home/>} />
       <Route path="/Servicios" element={<Servicios/>} />
       <Route path="/ComoSomos" element={<ComoSomos/>} />
-      <Route path="/Quienesomos" element={<Quienesomos/>} />
+      <Route path="/QuienesSomos" element={<QuienesSomos/>} />
       <Route path="/Sostenibilidad" element={<Sostenibilidad/>} />
-
+      <Route path="/ServiciosDescripcion" element={<ServiciosDescripcion/>} />
       <Route path="/CasosExito" element={<CasosExito/>} />
-      
+
+      <Route path="/Noticias" element={<Noticias/>} />
+
       </Routes>
       <Footer />
     </div>

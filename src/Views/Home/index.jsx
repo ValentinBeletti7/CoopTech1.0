@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import styles from './inicio.module.css';
 
+
 const Home = () => {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
+  const [currentParagraph, setCurrentParagraph] = useState(1);
 
   useEffect(() => {
-    // Oculta el primer párrafo después de 10 segundos
     const timeoutHideFirstParagraph = setTimeout(() => {
       setShowFirstParagraph(false);
     }, 10000);
 
-    // Muestra el segundo párrafo después de 20 segundos (10 segundos para ocultar + 10 segundos para mostrar)
     const timeoutShowSecondParagraph = setTimeout(() => {
       setShowFirstParagraph(true);
+      setCurrentParagraph((prev) => (prev === 1 ? 2 : 1)); // Alternar entre 1 y 2
     }, 20000);
 
-    // Limpia para que vuelva a comenzar
     return () => {
       clearTimeout(timeoutHideFirstParagraph);
       clearTimeout(timeoutShowSecondParagraph);
     };
-  }, []);
+  }, [currentParagraph]);
 
 
   return (
@@ -40,7 +40,7 @@ const Home = () => {
         <p className={showFirstParagraph ? styles.fadeIn : styles.fadeOut}>
         Para evolucionar los servicios esenciales, con adaptabilidad y escalabilidad.
         </p>
-        <p className={!showFirstParagraph ? styles.fadeIn : styles.fadeOut}>
+        <p className={`${showFirstParagraph ? styles.fadeOut : styles.fadeIn} ${styles.ubicacion}`}>
         Para hacer un mejor trabajo juntos.
         </p>
       </div>

@@ -2,4 +2,22 @@
     padding-top: 6vh;
 
 }
+.section {
+    padding: 60px 0;
+    overflow: hidden;
+    position: relative;
+  }
+.sectionbg:before {
+    content: "";
+    background: #1b1b1b;
+    position: absolute;
+    bottom: 60px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+  }
+  .sectionbg {
+    padding: 120px 0;
 
+  }
