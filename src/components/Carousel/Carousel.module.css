@@ -14,31 +14,11 @@ h1{
     padding-top: 30px;
 }
 
-.swiperpagination {
-    margin-top: 20px;
-    position: relative;
-  }
-  
- .swiperpagination .swiperpaginationbullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #e03a3c;
-  }
-  
- .swiperpagination .swiperpaginationbullet-active {
-    background-color: #e03a3c;
-  }
-  
-.swiperslide img {
-    opacity: 0.5;
-    transition: 0.3s;
-    filter: grayscale(100);
-  }
-  
- .swiperslide img:hover {
-    opacity: 1;
-    filter: none;
-  }
-  
+:root {
+  --swiper-theme-color: black;
+}
+.centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}   
