@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './Olas.module.css';
+import { Button } from 'react-scroll';
+import { LuDownload } from "react-icons/lu";
+
 
 const Olas = ({ imagen, titulo, posicion, texto, video, id,color }) => {
   const textoArray = texto.split(/\@/);
@@ -19,10 +22,16 @@ const Olas = ({ imagen, titulo, posicion, texto, video, id,color }) => {
             <div className='grid grid-cols-3'>
               {posicion === "1" ? (
                 <>
-             {video != null ? (
+             {video == 1 ? (
                 <>
-                 <video  controls src={video} loop={true} className={`mx-12 mb-12 col-start-1 col-end-3 rounded-b-xl  ${styles.img}`}></video>
-                  <ul className={`mx-12 col-end-7 col-span-2  ${ulClassName}`}>{listaDeTexto}</ul>
+                <img
+                    src={imagen}
+                    className={`mx-12 mb-12 col-start-1 col-end-3  ${styles.img}`}
+                  />
+                  
+                   {/*<video  controls src={video} loop={true} className={`mx-12 mb-12 col-start-1 col-end-3 rounded-b-xl  ${styles.img}`}></video>*/}
+                  <ul className={`mx-12 col-end-7 col-span-2 text-center ${ulClassName}`}>{listaDeTexto}
+                  <Button className={styles.boton}> <LuDownload className={styles.icono} /></Button></ul>
                 </>
               ) : (
                 <>
@@ -30,22 +39,32 @@ const Olas = ({ imagen, titulo, posicion, texto, video, id,color }) => {
                     src={imagen}
                     className={`mx-12 mb-12 col-start-1 col-end-3  ${styles.img}`}
                   />
-                  <ul className={`mx-12 col-end-7 col-span-2  ${ulClassName}`}>{listaDeTexto}</ul>
-
+                  <ul className={`mx-12 col-end-7 col-span-2  ${ulClassName}`}>{listaDeTexto}
+                  </ul>
                 </>
               )}
     
                 </>
               ) : (
                 <>
-                {video != null ? (
+                {video == 1 ? (
                 <>
-                 <ul className={`mx-16 col-start-1 col-end-3  ${ulClassName}`}>{listaDeTexto}</ul>
-                 <video controls src={video} loop={true} className={`mx-16 mb-12 col-end-7 col-span-2 rounded-b-xl ${styles.img}`}></video>
+                 <ul className={`mx-16 col-start-1 col-end-3 text-center ${ulClassName}`}>{listaDeTexto}
+                 <Button className={styles.boton}>  <LuDownload className={styles.icono}  /></Button>
+
+                 </ul>
+                 <img
+                    src={imagen}
+                    className={`mx-16 mb-12 col-end-7 col-span-2 ${styles.img}`}
+                  />
+                 {/*<video controls src={video} loop={true} className={`mx-16 mb-12 col-end-7 col-span-2 rounded-b-xl ${styles.img}`}></video>*/}
                 </>
               ) : (
                 <>
-                  <ul className={`mx-16 col-start-1 col-end-3  ${ulClassName}`}>{listaDeTexto}</ul>
+                  <ul className={`mx-16 col-start-1 col-end-3  ${ulClassName}`}>{listaDeTexto}
+
+                  </ul>
+                  
                   <img
                     src={imagen}
                     className={`mx-16 mb-12 col-end-7 col-span-2 ${styles.img}`}

@@ -1,9 +1,25 @@
 
 footer{
 
-    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-family: 'Montserrat-SemiBold', sans-serif !important;
+    
 }
 
 a{
     cursor: pointer;
 }
+.textofooter{
+    font-size: 20px;
+    padding-right: 3rem;
+    color: white;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    --tw-drop-shadow: drop-shadow(2px 2px 2px #000) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
+}
+.icon{  --tw-drop-shadow: drop-shadow(2px 2px 2px #000) !important;
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;}
+
+ .imagenfooter{
+    width: 20%;
+    margin-right: 3rem;
+ }   

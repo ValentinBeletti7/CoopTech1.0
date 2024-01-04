@@ -22,4 +22,17 @@ h1::after {
 .textli{
     font-size: 20px !important;
 }
-
+.boton{
+    background-color: #fd1111;
+    color: white;
+    border-radius: 30px;
+    width: 3rem;
+    height: 3rem;
+    font-size: 20px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+.icono{
+    position: relative;
+    top: 0px;
+    left: 14px;
+}

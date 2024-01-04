@@ -13,6 +13,7 @@ import Sostenibilidad from './Views/Adncooptech/Sostenibilidad';
 import ServiciosDescripcion from './Views/Servicios/vistaDescripcion';
 import QuienesSomos from './Views/Adncooptech/QuienesSomos';
 import Noticias from './Views/Noticias';
+import Premios from './Views/Premios';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       <Route path="/Sostenibilidad" element={<Sostenibilidad/>} />
       <Route path="/ServiciosDescripcion" element={<ServiciosDescripcion/>} />
       <Route path="/CasosExito" element={<CasosExito/>} />
-
+      <Route path="/Premios" element={<Premios/>} />
       <Route path="/Noticias" element={<Noticias/>} />
 
       </Routes>

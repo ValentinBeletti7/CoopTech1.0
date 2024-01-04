@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './inicio.module.css';
 
+import Imagen2 from '/src/assets/Coop_Tech_inicial_page-0001-removebg-preview.png';
+import Imagen1 from '/src/assets/concepto-comunicacion-ocio-personas.jpg';
 
 const Home = () => {
   const [showFirstParagraph, setShowFirstParagraph] = useState(true);
@@ -25,16 +27,20 @@ const Home = () => {
 
   return (
     <>
-      <video
-        src="src/assets/production_id_3683883 (1080p).mp4"
+      {/*<video
+        src={Imagen1}
         autoPlay={true}
         muted={true}
         loop={true}
-      ></video>
+  ></video>*/}<img
+          className={styles.swadow}
+          src={Imagen1}
+          alt="Descripción de la imagen"
+        />
       <div className={styles.texto + ' ml-48'}>
         <img
           className={styles.swadow}
-          src="src/assets/Coop_Tech_inicial_page-0001-removebg-preview.png"
+          src={Imagen2}
           alt="Descripción de la imagen"
         />
         <p className={showFirstParagraph ? styles.fadeIn : styles.fadeOut}>
